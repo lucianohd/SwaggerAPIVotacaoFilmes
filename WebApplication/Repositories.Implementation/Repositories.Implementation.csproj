@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.35" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0-rc.2.20475.5" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Repositorires\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Repositorires\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Repositorires\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Repositorires\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain.Specs\Domain.Specs.csproj" />
+      <ProjectReference Include="..\Repositories.Spec\Repositories.Spec.csproj" />
+    </ItemGroup>
+
+</Project>
