@@ -103,12 +103,14 @@ namespace Repositories.Implementation.Repositories
             }
         }
 
-        public List<UsuarioListar> ListarUsuarios(string token)
+        public List<UsuarioListar> ListarUsuarios(string token, bool ordemAlfabetica)
         {
             using (IDbConnection dbConnection = Connection)
             {
                 dbConnection.Open();
                 string sqlBuilder = "SELECT * from [dbo].[Usuario] where Administrador = '0' and Ativo = '1'";
+                if (ordemAlfabetica)
+                    sqlBuilder += " order by Login_Usuario";
                 var listaDeUsuarios = dbConnection.Query<UsuarioListar>(sqlBuilder).ToList();
                 dbConnection.Close();
                 return listaDeUsuarios;

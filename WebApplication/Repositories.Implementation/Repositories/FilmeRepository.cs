@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using Dapper;
+using Domain.Specs.Filters;
 using Domain.Specs.ValueObjects;
 using Repositories.Spec.Repositories;
 
@@ -72,5 +74,55 @@ namespace Repositories.Implementation.Repositories
             }
         }
 
+        public List<FilmeOrdenado> ProcurarFilmes(Filme filtroFilme, OrdemFilter filtroOrdem)
+        {
+            using (IDbConnection dbConnection = Connection)
+            {
+                dbConnection.Open();
+                string sqlBuilder = "SELECT	AVG(v.Nota) as Media_Nota, COUNT(v.VotoId) as Total_Votos, v.FilmeId, f.Nome, f.Diretor, f.Genero, f.Atores from Votos v  INNER JOIN Filmes f ON v.filmeid=f.id group by FilmeId,f.Nome,f.Diretor,f.Genero,f.Atores ";
+                sqlBuilder += AplicarFiltrosOrdem(filtroOrdem);
+                var filmes = dbConnection.Query<FilmeOrdenado>(sqlBuilder).ToList();
+                return filmes;
+            }
+        }
+
+        private string AplicarFiltrosOrdem(OrdemFilter filtroOrdem)
+        {
+            string sql = " order by";
+            if (filtroOrdem.Alfabetica) 
+                sql += " 4";
+            if (filtroOrdem.Alfabetica && filtroOrdem.Votacao)
+                sql += ",";
+            if (filtroOrdem.Votacao) 
+                sql += " 1";
+            return sql;
+        }
+
+        private string AplicaFiltrosFilme(Filme filtroFilme, OrdemFilter filtroOrdem)
+        {
+            string sql = " where ";
+            if (!string.IsNullOrEmpty(filtroFilme.Atores))
+            {
+                sql += string.Format(" Atores = '{0}'",filtroFilme.Atores);
+            }
+            if (!string.IsNullOrEmpty(filtroFilme.Diretor))
+            {
+                sql += string.Format(" Diretor = '{0}'",filtroFilme.Diretor);
+            }
+            if (!string.IsNullOrEmpty(filtroFilme.Genero))
+            {
+                sql += string.Format(" Genero = '{0}'",filtroFilme.Genero);
+            } 
+            if (!string.IsNullOrEmpty(filtroFilme.Nome))
+            {
+                sql += string.Format(" Nome = '{0}'",filtroFilme.Nome);
+            }
+
+
+            if (sql == " order by ")
+                sql = "";
+            
+            return sql;
+        }
     }
 }

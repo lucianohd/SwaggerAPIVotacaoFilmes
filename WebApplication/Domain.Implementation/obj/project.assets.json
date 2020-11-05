@@ -301,6 +301,9 @@
       "Domain.Specs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FluentValidation": "9.3.0-preview2"
+        },
         "compile": {
           "bin/placeholder/Domain.Specs.dll": {}
         },

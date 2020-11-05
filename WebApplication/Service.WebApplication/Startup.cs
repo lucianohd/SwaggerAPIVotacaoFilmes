@@ -34,7 +34,7 @@ namespace WebApplication
             services.AddScoped<IFilmeDomainService, FilmeDomainService>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IFilmeRepository, FilmeRepository>();
-
+    
 
             services.AddControllersWithViews();
             services.AddSwaggerGen(c => c.SwaggerDoc(

@@ -606,6 +606,9 @@
         }
       },
       "Domain.Specs/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "9.3.0-preview2"
+        },
         "runtime": {
           "Domain.Specs.dll": {}
         },

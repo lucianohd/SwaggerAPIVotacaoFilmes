@@ -95,5 +95,23 @@ namespace Domain.Implementation.Mensagens {
                 return ResourceManager.GetString("MSG004", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Não existem usuarios nao administradores cadastrados&quot;.
+        /// </summary>
+        public static string MSG005 {
+            get {
+                return ResourceManager.GetString("MSG005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Validacao do {0} recusada&quot;.
+        /// </summary>
+        public static string MSG006 {
+            get {
+                return ResourceManager.GetString("MSG006", resourceCulture);
+            }
+        }
     }
 }

@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Linq;
 using Domain.Implementation.Exceptions;
+using Domain.Implementation.Mensagens;
 using Domain.Specs.DomainServices;
+using Domain.Specs.Filters;
 using Domain.Specs.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using WebApplication.Models;
 
 namespace WebApplication.Controllers
@@ -48,6 +52,34 @@ namespace WebApplication.Controllers
             catch (IMDbException ex)
             {
                 return new JsonResult(ex);
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(ex);
+            }
+        }
+        
+        [Route("Listar/Filmes")]
+        [HttpPost]
+        public JsonResult ListarFilmes([FromBody] ListarFilmesModel listarFilmesModel)
+        {
+            try
+            {
+                var filtroFilme = new Filme(listarFilmesModel.Diretor,listarFilmesModel.Nome,listarFilmesModel.Genero,listarFilmesModel.Atores);
+                var filtroOrdem = new OrdemFilter(listarFilmesModel.alfabetica,listarFilmesModel.votacao);
+                var listaDeFilmes = _filmeDomainService.ListarFilmes(filtroFilme,filtroOrdem);
+                
+                if (!listaDeFilmes.Any())
+                {
+                    throw new IMDbException(005, Mensagens.MSG005);
+                }
+                string jsonResposta = JsonConvert.SerializeObject(listaDeFilmes);
+
+                return new JsonResult(jsonResposta);
+            }
+            catch (IMDbException ex)
+            {
+                return new JsonResult(ex.Message);
             }
             catch (Exception ex)
             {

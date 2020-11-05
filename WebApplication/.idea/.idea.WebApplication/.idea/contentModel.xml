@@ -32,6 +32,7 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Validators" t="Include">
+          <e p="FilmeValidator.cs" t="Include" />
           <e p="UsuarioValidator.cs" t="Include" />
           <e p="VotoValidator.cs" t="Include" />
         </e>
@@ -44,6 +45,9 @@
         <e p="DomainServices" t="Include">
           <e p="ICadastroDomainService.cs" t="Include" />
           <e p="IFilmeDomainService.cs" t="Include" />
+        </e>
+        <e p="Filters" t="Include">
+          <e p="OrdemFilter.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -59,6 +63,7 @@
         <e p="Startup.cs" t="Include" />
         <e p="ValueObjects" t="Include">
           <e p="Filme.cs" t="Include" />
+          <e p="FilmeOrdenado.cs" t="Include" />
           <e p="Usuario.cs" t="Include" />
           <e p="UsuarioListar.cs" t="Include" />
           <e p="Voto.cs" t="Include" />
@@ -131,7 +136,8 @@
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="ExcluirUsuarioModel.cs" t="Include" />
           <e p="FilmeModel.cs" t="Include" />
-          <e p="TokenModel.cs" t="Include" />
+          <e p="ListarFilmesModel.cs" t="Include" />
+          <e p="ListarUsuarioModel.cs" t="Include" />
           <e p="UsuarioModel.cs" t="Include" />
           <e p="VotoModel.cs" t="Include" />
         </e>
@@ -226,8 +232,40 @@
         </e>
       </e>
       <e p="Services" t="Include" />
+      <e p="Tests" t="Include" />
+      <e p="UnitTests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cadastro" t="Include">
+          <e p="CadastroTeste.cs" t="Include" />
+          <e p="Fakers" t="Include">
+            <e p="CadastroFaker.cs" t="Include" />
+            <e p="FilmeFaker.cs" t="Include" />
+            <e p="VotoFaker.cs" t="Include" />
+          </e>
+          <e p="FilmeTeste.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="UnitTests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="UnitTests.csproj" t="IncludeRecursive" />
+      </e>
       <e p="WebApplication.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\Luciano\.nuget\packages\microsoft.net.test.sdk\16.7.1\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Luciano\.nuget\packages\microsoft.testplatform.testhost\16.7.1\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\Luciano\.nuget\packages\microsoft.testplatform.testhost\16.7.1\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\Luciano\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\Luciano\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\Luciano\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="C:\Users\Luciano\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Luciano\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Luciano\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WebApplication.1812498182.00" t="ExcludeRecursive" />

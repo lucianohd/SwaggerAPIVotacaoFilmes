@@ -6,6 +6,7 @@ using WebApplication.Models;
 using Domain.Implementation.Exceptions;
 using Domain.Specs.ValueObjects;
 using Domain.Implementation.DomainServices;
+using Domain.Implementation.Mensagens;
 using Domain.Specs.DomainServices;
 using JsonApiSerializer;
 using Newtonsoft.Json;
@@ -94,23 +95,28 @@ namespace WebApplication.Controllers
         /// </summary>
         [Route("Listar/Usuarios")]
         [HttpPost]
-        public JsonResult ListarUsuarios([FromBody] TokenModel token)
+        public JsonResult ListarUsuarios([FromBody] ListarUsuarioModel listarUsuario)
         {
-
-                var listaDeUsuarios = _cadastroDomainService.ListarUsuarios(token.Token);
-                var options = new JsonApiSerializerSettings(){
-                    WriteIndented = true
-                };
-                var json = new string("");
-                var json2 = JsonSerializer.Serialize(listaDeUsuarios.First(), options);
-                foreach (var usuario in listaDeUsuarios)
+            try
+            {
+                var listaDeUsuarios = _cadastroDomainService.ListarUsuarios(listarUsuario.Token,listarUsuario.OrdemAlfabetica);
+                
+                if (!listaDeUsuarios.Any())
                 {
-                    json2 = JsonSerializer.Serialize(usuario, options);
-
+                    throw new IMDbException(005, Mensagens.MSG005);
                 }
-                //string json = JsonSerializer.Serialize(listaDeUsuarios, options);
+                string jsonResposta = JsonConvert.SerializeObject(listaDeUsuarios);
 
-                return new JsonResult(json);
+                return new JsonResult(jsonResposta);
+            }
+            catch (IMDbException ex)
+            {
+                return new JsonResult(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(ex);
+            }
         }
     }
 }

@@ -11,6 +11,6 @@ namespace Repositories.Spec.Repositories
         bool ValidaToken(string token);
         void AlterarUsuario(Usuario usuario);
         void ExcluirUsuario(Usuario usuario);
-        List<UsuarioListar> ListarUsuarios(string token);
+        List<UsuarioListar> ListarUsuarios(string token, bool ordemAlfabetica);
     }
 }

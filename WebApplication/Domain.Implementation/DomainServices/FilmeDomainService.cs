@@ -1,6 +1,8 @@
-﻿using Domain.Implementation.Exceptions;
+﻿using System.Collections.Generic;
+using Domain.Implementation.Exceptions;
 using Domain.Implementation.Validators;
 using Domain.Specs.DomainServices;
+using Domain.Specs.Filters;
 using Domain.Specs.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
 using Repositories.Implementation.Repositories;
@@ -12,6 +14,8 @@ namespace Domain.Implementation.DomainServices
     {
         private IFilmeRepository _filmeRepository;
         private IUsuarioRepository _usuarioRepository;
+
+        public FilmeDomainService(){}
 
         public FilmeDomainService(IFilmeRepository filmeRepository, IUsuarioRepository usuarioRepository)
         {
@@ -39,7 +43,8 @@ namespace Domain.Implementation.DomainServices
 
         public JsonResult VotarFilme(Voto voto, string token)
         {
-            ValidarVoto(voto);
+            if (ValidarVoto(voto))
+                throw new IMDbException(404, string.Format(Mensagens.Mensagens.MSG006,"voto"));
             _usuarioRepository.ValidaToken(token);
             ChecaSeFilmeExiste(voto.FilmeId);
             var usuario = PegaNomeUsuarioPorToken(token); // posso ter que castar algo
@@ -48,13 +53,31 @@ namespace Domain.Implementation.DomainServices
             return new JsonResult("deu bom no voto");
         }
 
-        private void ValidarVoto(Voto voto)
+        public List<FilmeOrdenado> ListarFilmes(Filme filtroFilme, OrdemFilter filtroOrdem)
+        {
+            var listaDeFilmes = ProcurarFilmes(filtroFilme, filtroOrdem);
+
+            return listaDeFilmes;
+        }
+
+        private List<FilmeOrdenado> ProcurarFilmes(Filme filtroFilme, OrdemFilter filtroOrdem)
+        {
+            return _filmeRepository.ProcurarFilmes(filtroFilme, filtroOrdem);
+        }
+
+        public bool ValidarVoto(Voto voto)
         {
             var validator = new VotoValidator();
             var resultado = validator.Validate(voto);
-            if (!resultado.IsValid){ 
-                throw new IMDbException(404, resultado.ToString(" , "));
-            }
+
+            return resultado.IsValid;
+        }
+        public bool ValidarFilme(Filme voto)
+        {
+            var validator = new FilmeValidator();
+            var resultado = validator.Validate(voto);
+
+            return resultado.IsValid;
         }
 
         private void RegistraVoto(Voto voto)

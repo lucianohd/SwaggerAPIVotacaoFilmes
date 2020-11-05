@@ -4,6 +4,7 @@ using Domain.Implementation.Exceptions;
 using Domain.Implementation.Validators;
 using Domain.Specs.DomainServices;
 using Domain.Specs.ValueObjects;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using Repositories.Spec.Repositories;
 
@@ -13,6 +14,7 @@ namespace Domain.Implementation.DomainServices
     public class CadastroDomainService : ICadastroDomainService
     {
         private IUsuarioRepository _usuarioRepository;
+        public CadastroDomainService(){}
         
         public CadastroDomainService(IUsuarioRepository usuarioRepository)
         {
@@ -75,7 +77,9 @@ namespace Domain.Implementation.DomainServices
 
         public Usuario ExcluirUsuario(Usuario usuario, string token)
         {
-            ValidarUsuario(usuario);
+            if (ValidarUsuario(usuario))
+                throw new IMDbException(404, Mensagens.Mensagens.MSG006);
+
             ValidaToken(token);
             ValidaToken(usuario.Token);
             var administrador = ChecaTokenAdministrador(token); //Se for administrador pode mudar qualquer um, usuario só pode mudar se estiver tentando a si mesmo
@@ -91,29 +95,30 @@ namespace Domain.Implementation.DomainServices
             _usuarioRepository.ExcluirUsuario(usuario);
         }
 
-        public List<UsuarioListar> ListarUsuarios(string token)
+        public List<UsuarioListar> ListarUsuarios(string token, bool ordemAlfabetica)
         {
             var administrador = ChecaTokenAdministrador(token);
+            if(!administrador)
+                throw new IMDbException(005, Mensagens.Mensagens.MSG003);
             var listaDeUsuarios = new List<UsuarioListar>();
             if (administrador)
             {
-                listaDeUsuarios = ListarNaoAdministradores(token);
+                listaDeUsuarios = ListarNaoAdministradores(token, ordemAlfabetica);
             }
 
             return listaDeUsuarios;
         }
 
-        private List<UsuarioListar> ListarNaoAdministradores(string token)
+        private List<UsuarioListar> ListarNaoAdministradores(string token, bool ordemAlfabetica)
         {
-            return _usuarioRepository.ListarUsuarios(token);
+            return _usuarioRepository.ListarUsuarios(token, ordemAlfabetica);
         }
 
-        private void ValidarUsuario(Usuario usuario)
+        public bool ValidarUsuario(Usuario usuario)
         {
             var validator = new UsuarioValidator();
             var resultado = validator.Validate(usuario);
-            if (!resultado.IsValid)
-                throw new IMDbException(404, resultado.ToString(" , "));
+            return resultado.IsValid;
         }
     }
     

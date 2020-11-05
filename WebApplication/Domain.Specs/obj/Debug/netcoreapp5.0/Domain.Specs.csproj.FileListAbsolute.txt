@@ -18,3 +18,5 @@ C:\Ioasys\empresas-dotnet\WebApplication\Domain.Specs\obj\Debug\netcoreapp5.0\st
 C:\Ioasys\empresas-dotnet\WebApplication\Domain.Specs\obj\Debug\netcoreapp5.0\Domain.Specs.dll
 C:\Ioasys\empresas-dotnet\WebApplication\Domain.Specs\obj\Debug\netcoreapp5.0\Domain.Specs.pdb
 C:\Ioasys\empresas-dotnet\WebApplication\Domain.Specs\obj\Debug\netcoreapp5.0\Domain.Specs.genruntimeconfig.cache
+C:\Ioasys\empresas-dotnet\WebApplication\Domain.Specs\bin\Debug\netcoreapp5.0\FluentValidation.dll
+C:\Ioasys\empresas-dotnet\WebApplication\Domain.Specs\obj\Debug\netcoreapp5.0\Domain.Specs.csproj.CopyComplete

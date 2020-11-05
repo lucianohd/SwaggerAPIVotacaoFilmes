@@ -30,4 +30,11 @@
     <data name="MSG004" xml:space="preserve">
         <value>Filme Não Registrado</value>
     </data>
+    <data name="MSG005" xml:space="preserve">
+        <value>"Não existem usuarios nao administradores cadastrados"</value>
+    </data>
+    <data name="MSG006" xml:space="preserve">
+        <value>"Validacao do {0} recusada"</value>
+    </data>
+    
 </root>

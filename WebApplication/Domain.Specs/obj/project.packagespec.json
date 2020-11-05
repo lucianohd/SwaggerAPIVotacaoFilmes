@@ -31,6 +31,12 @@
   },
   "frameworks": {
     "netcoreapp5.0": {
+      "dependencies": {
+        "FluentValidation": {
+          "target": "Package",
+          "version": "[9.3.0-preview2, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

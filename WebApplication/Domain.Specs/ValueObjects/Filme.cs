@@ -2,6 +2,7 @@
 {
     public class Filme
     {
+        public Filme(){}
         public Filme(string diretor, string nome, string genero, string atores)
         {
             Diretor = diretor;

@@ -329,6 +329,17 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "FluentValidation/9.3.0-preview2": {
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/5.0.0-rc.2.20475.5": {},
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
@@ -565,6 +576,9 @@
         }
       },
       "Domain.Specs/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "9.3.0-preview2"
+        },
         "runtime": {
           "Domain.Specs.dll": {}
         },
@@ -2265,6 +2279,13 @@
       "sha512": "sha512-/xAgd8BO8EDnJ0sURWEV8LptHHvTKxoYiT63YUF2U/yWE2VyUCqR2jcrtEyNngT9Kjzppecz95UKiBla3PnR7g==",
       "path": "dapper/2.0.35",
       "hashPath": "dapper.2.0.35.nupkg.sha512"
+    },
+    "FluentValidation/9.3.0-preview2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Aa/ZUDoxVAHd+d7plT+kCrDupi7WaE/nHKDiiyICIvEomXC9Urk/5vIpB0WZYZ9lukxetQw44oS/5S+kbU0M/Q==",
+      "path": "fluentvalidation/9.3.0-preview2",
+      "hashPath": "fluentvalidation.9.3.0-preview2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0-rc.2.20475.5": {
       "type": "package",

@@ -49,3 +49,4 @@ C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Implementation\obj\Debug\n
 C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Implementation\obj\Debug\netcoreapp5.0\Repositories.Implementation.dll
 C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Implementation\obj\Debug\netcoreapp5.0\Repositories.Implementation.pdb
 C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Implementation\obj\Debug\netcoreapp5.0\Repositories.Implementation.genruntimeconfig.cache
+C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Implementation\bin\Debug\netcoreapp5.0\FluentValidation.dll

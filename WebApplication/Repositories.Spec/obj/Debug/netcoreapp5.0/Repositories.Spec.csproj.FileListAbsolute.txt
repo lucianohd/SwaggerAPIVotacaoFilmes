@@ -23,3 +23,4 @@ C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Spec\bin\Debug\netcoreapp5
 C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Spec\bin\Debug\netcoreapp5.0\Domain.Specs.pdb
 C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Spec\obj\Debug\netcoreapp5.0\Repositories.Spec.MvcApplicationPartsAssemblyInfo.cs
 C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Spec\obj\Debug\netcoreapp5.0\Repositories.Spec.csproj.CopyComplete
+C:\Ioasys\empresas-dotnet\WebApplication\Repositories.Spec\bin\Debug\netcoreapp5.0\FluentValidation.dll
