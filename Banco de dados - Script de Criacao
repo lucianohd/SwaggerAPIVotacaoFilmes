@@ -1,0 +1,73 @@
+CREATE database IMDb
+
+USE [IMDb]
+GO
+
+/****** Object:  Table [dbo].[Filmes]    Script Date: 20/10/2020 22:55:56 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Filmes](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Diretor] [varchar](50) NULL,
+	[Nome] [varchar](100) NOT NULL,
+	[Genero] [varchar](20) NOT NULL,
+	[Atores] [varchar](1000) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+USE [IMDb]
+GO
+
+/****** Object:  Table [dbo].[Usuario]    Script Date: 20/10/2020 22:56:37 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Usuario](
+	[Token] [varchar](36) NOT NULL,
+	[Login_Usuario] [varchar](30) NOT NULL,
+	[Senha_Usuario] [varchar](30) NOT NULL,
+	[Administrador] [bit] NOT NULL,
+	[Ativo] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Token] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+INSERT INTO [dbo].[Usuario]
+VALUES('admin','admin','admino',1,1)
+
+USE [IMDb]
+GO
+
+/****** Object:  Table [dbo].[Votos]    Script Date: 20/10/2020 22:57:12 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Votos](
+	[VotoId] [int] IDENTITY(1,1) NOT NULL,
+	[FilmeId] [varchar](100) NOT NULL,
+	[Usuario] [varchar](30) NOT NULL,
+	[Nota] [tinyint] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[VotoId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
