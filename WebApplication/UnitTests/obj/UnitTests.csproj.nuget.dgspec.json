@@ -1,0 +1,384 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj",
+        "projectName": "Domain.Implementation",
+        "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj",
+        "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
+        "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://srvm799:8080/tfs/ANTT/_packaging/FrameworkANTT/nuget/v3/index.json": {},
+          "http://www.squadra.com.br/antt/nexus/service/local/nuget/feed/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp5.0": {
+            "projectReferences": {
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+              },
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj"
+              },
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp5.0": {
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[9.3.0-preview2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.1.20155.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
+        "projectName": "Domain.Specs",
+        "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
+        "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
+        "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://srvm799:8080/tfs/ANTT/_packaging/FrameworkANTT/nuget/v3/index.json": {},
+          "http://www.squadra.com.br/antt/nexus/service/local/nuget/feed/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp5.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp5.0": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0-preview2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.1.20155.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj",
+        "projectName": "Repositories.Implementation",
+        "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj",
+        "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
+        "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://srvm799:8080/tfs/ANTT/_packaging/FrameworkANTT/nuget/v3/index.json": {},
+          "http://www.squadra.com.br/antt/nexus/service/local/nuget/feed/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp5.0": {
+            "projectReferences": {
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+              },
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp5.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0-rc.2.20475.5, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.1.20155.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj",
+        "projectName": "Repositories.Spec",
+        "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj",
+        "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
+        "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://srvm799:8080/tfs/ANTT/_packaging/FrameworkANTT/nuget/v3/index.json": {},
+          "http://www.squadra.com.br/antt/nexus/service/local/nuget/feed/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp5.0": {
+            "projectReferences": {
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp5.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.1.20155.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\UnitTests.csproj",
+        "projectName": "UnitTests",
+        "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
+        "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://srvm799:8080/tfs/ANTT/_packaging/FrameworkANTT/nuget/v3/index.json": {},
+          "http://www.squadra.com.br/antt/nexus/service/local/nuget/feed/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp5.0": {
+            "projectReferences": {
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj"
+              },
+              "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+                "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp5.0": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.0.0-alpha0001, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.7, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.1.20155.7\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
