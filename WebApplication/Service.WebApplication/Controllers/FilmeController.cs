@@ -60,7 +60,7 @@ namespace WebApplication.Controllers
         }
         
         [Route("Listar/Filmes")]
-        [HttpPost]
+        [HttpGet]
         public JsonResult ListarFilmes([FromBody] ListarFilmesModel listarFilmesModel)
         {
             try

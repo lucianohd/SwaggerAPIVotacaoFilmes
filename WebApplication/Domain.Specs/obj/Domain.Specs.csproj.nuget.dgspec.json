@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {}
+    "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {}
   },
   "projects": {
-    "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+    "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
+        "projectUniqueName": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
         "projectName": "Domain.Specs",
-        "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
+        "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
         "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
-        "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\obj\\",
+        "outputPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -6317,11 +6317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Service.WebApplication\\Service.WebApplication.csproj",
+      "projectUniqueName": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Service.WebApplication\\Service.WebApplication.csproj",
       "projectName": "Service.WebApplication",
-      "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Service.WebApplication\\Service.WebApplication.csproj",
+      "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Service.WebApplication\\Service.WebApplication.csproj",
       "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
-      "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Service.WebApplication\\obj\\",
+      "outputPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Service.WebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6342,8 +6342,8 @@
       "frameworks": {
         "netcoreapp5.0": {
           "projectReferences": {
-            "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj": {
-              "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj"
+            "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj": {
+              "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj"
             }
           }
         }

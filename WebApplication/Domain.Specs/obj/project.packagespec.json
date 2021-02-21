@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
+    "projectUniqueName": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
     "projectName": "Domain.Specs",
-    "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
-    "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\obj\\",
+    "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj",
+    "outputPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

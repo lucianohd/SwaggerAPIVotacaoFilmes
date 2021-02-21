@@ -50,7 +50,7 @@ namespace WebApplication.Controllers
         /// 1.2. Editar Usuário
         /// </summary>
         [Route("Editar/Usuario")]
-        [HttpPost]
+        [HttpPut]
         public JsonResult EditarUsuario([FromBody] EditarUsuarioModel usuarioModel)
         {
             try
@@ -72,7 +72,7 @@ namespace WebApplication.Controllers
         /// 1.3. Excluir Usuário
         /// </summary>
         [Route("Excluir/Usuario")]
-        [HttpPost]
+        [HttpDelete]
         public JsonResult ExcluirUsuario([FromBody] ExcluirUsuarioModel usuarioModel)
         {
             try
@@ -94,7 +94,7 @@ namespace WebApplication.Controllers
         /// 1.4. Listar Usuários
         /// </summary>
         [Route("Listar/Usuarios")]
-        [HttpPost]
+        [HttpGet]
         public JsonResult ListarUsuarios([FromBody] ListarUsuarioModel listarUsuario)
         {
             try

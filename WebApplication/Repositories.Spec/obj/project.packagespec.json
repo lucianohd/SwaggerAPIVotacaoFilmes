@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj",
+    "projectUniqueName": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj",
     "projectName": "Repositories.Spec",
-    "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj",
-    "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\obj\\",
+    "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj",
+    "outputPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Spec\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,8 +21,8 @@
     "frameworks": {
       "netcoreapp5.0": {
         "projectReferences": {
-          "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
-            "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+          "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+            "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
           }
         }
       }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Ioasys\empresas-dotnet\WebApplication" t="IncludeFlat">
+    <e p="C:\Github\SwaggerAPIVotacaoFilmes\WebApplication" t="IncludeFlat">
       <e p="Domain" t="Include" />
       <e p="Domain.Implementation" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -268,6 +268,6 @@
     <e p="C:\Users\Luciano\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="C:\Users\Luciano\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Luciano\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Luciano\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WebApplication.1812498182.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Luciano\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WebApplication.-1408871123.00" t="ExcludeRecursive" />
   </component>
 </project>

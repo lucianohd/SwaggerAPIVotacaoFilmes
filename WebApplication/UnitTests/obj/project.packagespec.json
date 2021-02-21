@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\UnitTests.csproj",
+    "projectUniqueName": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\UnitTests\\UnitTests.csproj",
     "projectName": "UnitTests",
-    "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\UnitTests.csproj",
-    "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\UnitTests\\obj\\",
+    "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\UnitTests\\UnitTests.csproj",
+    "outputPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\UnitTests\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,11 +21,11 @@
     "frameworks": {
       "netcoreapp5.0": {
         "projectReferences": {
-          "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj": {
-            "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj"
+          "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj": {
+            "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj"
           },
-          "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
-            "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+          "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+            "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
           }
         }
       }

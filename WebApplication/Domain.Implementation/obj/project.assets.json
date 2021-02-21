@@ -1025,11 +1025,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj",
+      "projectUniqueName": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj",
       "projectName": "Domain.Implementation",
-      "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj",
+      "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\Domain.Implementation.csproj",
       "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
-      "outputPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Implementation\\obj\\",
+      "outputPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Implementation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1050,14 +1050,14 @@
       "frameworks": {
         "netcoreapp5.0": {
           "projectReferences": {
-            "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
-              "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
+            "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj": {
+              "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Domain.Specs\\Domain.Specs.csproj"
             },
-            "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj": {
-              "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj"
+            "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj": {
+              "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Implementation\\Repositories.Implementation.csproj"
             },
-            "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj": {
-              "projectPath": "C:\\Ioasys\\empresas-dotnet\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj"
+            "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj": {
+              "projectPath": "C:\\Github\\SwaggerAPIVotacaoFilmes\\WebApplication\\Repositories.Spec\\Repositories.Spec.csproj"
             }
           }
         }
